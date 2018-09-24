@@ -6,9 +6,10 @@ public class BulletDestroyZone : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet"))
-        {
-            Destroy(collision.gameObject);
-        }
+        Destroy(collision.gameObject);
+        //if (collision.CompareTag("Bullet"))
+        //{
+        //    Destroy(collision.gameObject);
+        //}
     }
 }

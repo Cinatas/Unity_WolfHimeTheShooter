@@ -63,6 +63,13 @@ namespace WolfHime
             Player._Instance.Die();
             GameOver();
         }
+
+        public void HealPlayer(int heal)
+        {
+            this.PlayerHp += heal;
+            if (PlayerHp > 5)
+                PlayerHp = 5;
+        }
     }
 
 }

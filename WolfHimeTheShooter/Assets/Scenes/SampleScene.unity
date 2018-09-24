@@ -590,7 +590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 222.86, y: -34.60002}
+  m_AnchoredPosition: {x: 222.85999, y: -34.600037}
   m_SizeDelta: {x: 82.69232, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &493772733
@@ -822,7 +822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140.17, y: -34.599}
+  m_AnchoredPosition: {x: 140.16998, y: -34.599}
   m_SizeDelta: {x: 82.69232, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &731860053
@@ -966,6 +966,10 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1181081480811776, guid: 57a22000eabde4d53a9d87e7ffafeb7b, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a22000eabde4d53a9d87e7ffafeb7b, type: 2}
   m_IsPrefabAsset: 0
@@ -1103,6 +1107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hp: 10
   destroyFX: {fileID: 1869977272248538, guid: b90ba95532bc33a4dbff626da7626e34, type: 2}
+  bullet: {fileID: 114864344276879838, guid: 16f1bcf072439b341915db6cdcddc2c9, type: 2}
+  Drops: {fileID: 0}
 --- !u!1 &1102545240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hp: 10
   destroyFX: {fileID: 1869977272248538, guid: b90ba95532bc33a4dbff626da7626e34, type: 2}
+  bullet: {fileID: 114864344276879838, guid: 16f1bcf072439b341915db6cdcddc2c9, type: 2}
+  Drops: {fileID: 0}
 --- !u!61 &1102545242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1328,7 +1336,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.04, y: -0.000000006592243}
@@ -1608,6 +1616,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hp: 10
   destroyFX: {fileID: 1869977272248538, guid: b90ba95532bc33a4dbff626da7626e34, type: 2}
+  bullet: {fileID: 114864344276879838, guid: 16f1bcf072439b341915db6cdcddc2c9, type: 2}
+  Drops: {fileID: 1486358769801020, guid: 27b6a1bd36a66ad4d821bcedcc02bf7a, type: 2}
 --- !u!61 &1518579553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2165,7 +2175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 470.93, y: -34.60002}
+  m_AnchoredPosition: {x: 470.93, y: -34.600037}
   m_SizeDelta: {x: 82.69232, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752946564
@@ -2246,7 +2256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 49.41, y: -34.6}
+  m_AnchoredPosition: {x: 49.410004, y: -34.599976}
   m_SizeDelta: {x: 98.82, y: 69.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1759483063
@@ -2492,7 +2502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 388.24, y: -34.60002}
+  m_AnchoredPosition: {x: 388.24, y: -34.600037}
   m_SizeDelta: {x: 82.69232, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1865783005

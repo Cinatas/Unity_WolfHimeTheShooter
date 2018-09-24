@@ -407,11 +407,14 @@
     <Compile Include="Assets\Hit &amp; Slashes Vol.3\SelfDestruct.cs" />
     <Compile Include="Assets\Scripts\BulletDestroyZone.cs" />
     <Compile Include="Assets\Scripts\Bullets\BulletBase.cs" />
+    <Compile Include="Assets\Scripts\Bullets\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\Bullets\ExplosionBase.cs" />
     <Compile Include="Assets\Scripts\BulletWeapon.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBase.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Interface\Ihurt.cs" />
+    <Compile Include="Assets\Scripts\Item\HpItem.cs" />
+    <Compile Include="Assets\Scripts\Item\ItemBase.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\RollingBackground.cs" />
     <Compile Include="Assets\Scripts\UI\AutoShotButton.cs" />

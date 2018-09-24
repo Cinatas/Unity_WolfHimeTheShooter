@@ -10,8 +10,10 @@ namespace WolfHime.Enemy
         public float Hp;
         public UnityAction OnDieAction;
         public GameObject destroyFX;
-
+        public EnemyBullet bullet;
         SpriteRenderer spRender;
+
+        public GameObject Drops;
 
         private void Awake()
         {
@@ -34,6 +36,9 @@ namespace WolfHime.Enemy
             if (OnDieAction != null)
                 OnDieAction();
 
+            if (Drops != null)
+                Instantiate(Drops).transform.position = this.transform.position;
+
             Destroy(this.gameObject);
         }
 
@@ -42,6 +47,12 @@ namespace WolfHime.Enemy
             this.Hp -= damage;
             if (this.Hp < 0)
                 Die();
+        }
+
+        public void Fire()
+        {
+            if (bullet != null)
+                Instantiate(bullet).transform.position = this.transform.position;
         }
 
     }
